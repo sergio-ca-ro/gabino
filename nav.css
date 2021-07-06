@@ -1,0 +1,221 @@
+.navbar{
+ background: #ffdfd3;
+ font-size: 20px;
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ z-index: 999;
+ border-bottom: 5px  solid black;
+
+}
+li{
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-cita{
+    text-decoration: none;
+    color: #957dad;
+}
+.navbar li:hover, li:active{
+    background-color: rgba(0, 0, 0, .3);
+}
+/* Aca inici el style de el body */
+.principal {
+    
+    background: linear-gradient(rgba(8, 10, 12, 0.50), rgba(8, 10, 12, 0.50)),
+    url("images/manosvacio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    width: 100%;
+    height: 88vh;
+    margin-top: 90px;
+   
+}
+.div-encabezado h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #957dad;
+    font-family: 'Pattaya', sans-serif;
+    padding-top: 5px;
+
+}
+.frase h3{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    color: orangered;
+}
+.cuadro h1{
+    height: 120px;
+    width: 300px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+.button-servicios{
+    width: 100px;
+    height: 40px;
+    border: solid 5px #957dad;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.button-servicios:hover{
+    transform: scale(2);
+}
+.button-servicios a{
+ text-decoration: none;
+ text-transform: uppercase;
+}
+.cuadro-button{
+     position: absolute;
+     left: 120px;
+     top: 200px;
+     
+}
+ /* media querys del main */
+ @media (max-width: 600px ){
+    .principal{
+        width: 100%;
+        background: #d291bc;
+    }
+ }
+/* Aca inicia el style de whatsapp */
+.div-whatsapp{
+    background-color: #d291bc;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50% ;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease o.5s;
+    animation: forma 1.5s infinite;
+}
+.div-whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.btn-whatsaap{
+    width: 50px;
+    transition: ease 1s;
+}
+@keyframes forma{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0,0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0,0, 0);
+    }
+}
+/* Aca inicia el style de los productos */
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.card{
+    width: 300px;
+    margin: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    cursor: default;
+    transition: all 300ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transform: translateY(-4%);
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.card .descripcion{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.card .descripcion a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #957dad;
+    border: 1px solid #957dad;
+    border-radius: 4px;
+    transition: all 300ms ease;
+}
+.card .descripcion a:hover{
+    background: #957dad;
+    color: white;
+}
+
+
+
+
+/* Aca inicia el style de galeria */
+.div-galeria{
+    width: 100vw;
+    height: 500px;
+    background-color: #d291bc;
+    text-align: center;
+}
+.galeria-img{
+    width: 40%;
+    height: 430px;
+    margin-top: 20px;
+    
+}
+
+/* Aca inicia el style de nosotros */
+.article-nosotros{
+    width: 80%;
+    height: 400px;
+    background-color: #957dad;
+    padding: 10px;
+    align-content: center;
+    margin: auto;
+}
+@media screen and (max-width: 600px ){
+    .article-nosotros {width: 100%;
+    }
+}
+/* Aca inicia el style del footer */
+.div-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ffdfd3;
+}
+.div-redes-sociales{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.img-facebook{
+    width: 60px;
+    height: 60px;
+
+}
+.img-instagram{
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+}
+.img-whatsapp{
+    width: 60px;
+    height: 60px;
+}
