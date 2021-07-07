@@ -81,9 +81,30 @@ li{
  /* media querys del main */
  @media (max-width: 600px ){
     .principal{
-        width: 100%;
-        background: #d291bc;
+        width: 102%;
+        /* background: #d8d8d8; */
     }
+    .div-encabezado h2{
+        padding: 5px;
+        font-size: 18px;
+        color: black;
+    }
+    .cuadro h1{
+        margin-left: 20px;
+        height: 100px;
+        width: 200px;
+    }
+ }
+ @media (max-width: 340px ){
+    .principal{
+        width: 102%;
+    }
+    .cuadro h1{
+        width: 150px;
+        margin-right:auto;
+        margin-left: auto;
+    }
+
  }
 /* Aca inicia el style de whatsapp */
 .div-whatsapp{
@@ -113,6 +134,16 @@ li{
         box-shadow: 0 0 0 10px rgba(0, 0,0, 0);
     }
 }
+@media (max-width: 600px){
+    .div-whatsapp{
+        right: 5px;
+    }
+    .btn-whatsaap{
+        width: 30px;
+    }
+
+}
+
 /* Aca inicia el style de los productos */
 
 .container-cards{
@@ -164,16 +195,31 @@ li{
 
 /* Aca inicia el style de galeria */
 .div-galeria{
-    width: 100vw;
-    height: 500px;
+    width: 60vw;
+    height: 450px;
     background-color: #d291bc;
     text-align: center;
+    margin: auto;
+}
+.div-galeria h1{
+    font-size: 18px;
+    padding: 5px;
 }
 .galeria-img{
-    width: 40%;
-    height: 430px;
+    width: 50px;
+    height: 350px;
     margin-top: 20px;
     
+}
+@media (max-width: 600px ){
+    .div-galeria{
+        width: 102%;
+    }
+    
+    .div-galeria h1{
+        font-size: 10px;
+    }
+
 }
 
 /* Aca inicia el style de nosotros */
@@ -184,9 +230,11 @@ li{
     padding: 10px;
     align-content: center;
     margin: auto;
+    margin-top: 10px;
 }
-@media screen and (max-width: 600px ){
-    .article-nosotros {width: 100%;
+@media (max-width: 600px ){
+    .article-nosotros{
+        width: 102%;
     }
 }
 /* Aca inicia el style del footer */
@@ -201,7 +249,7 @@ li{
     justify-content: center;
 }
 h1{
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     
 }
@@ -219,3 +267,9 @@ h1{
     width: 60px;
     height: 60px;
 }
+@media (max-width: 600px ){
+    .div-footer{
+        width: 102%;
+    }
+}
+
