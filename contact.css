@@ -1,14 +1,39 @@
+.navbar{
+    background: #ffdfd3;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    border-bottom: 5px  solid black;
+   
+   }
+   li{
+       margin-left: 30px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .nav-cita{
+       text-decoration: none;
+       color: #957dad;
+   }
+   .navbar li:hover, li:active{
+       background-color: rgba(0, 0, 0, .3);
+   }
+
+/* acAca inicia el style del formulario */
 *{
     box-sizing: border-box;
     }
     body{
         background-color: #957DAD;
-        padding: 10PX;
+        
     }
     .div-form{
         max-width: 1170px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 100px;
         padding: 10px;
     }
     h1{
@@ -61,5 +86,42 @@
     transition: background-color 1s ease-out;
     outline: 0;
     }
+
+    /* Aca inicia el style del footer */
+.div-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ffdfd3;
+}
+.div-redes-sociales{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.img-facebook{
+    width: 60px;
+    height: 60px;
+
+}
+.img-instagram{
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+}
+.img-whatsapp{
+    width: 60px;
+    height: 60px;
+}
+@media (max-width: 600px ){
+    .div-footer{
+        width: 102%;
+    }
+}
+
     
     
