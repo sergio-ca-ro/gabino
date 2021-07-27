@@ -13,10 +13,6 @@ li{
     margin-left: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav-cita{
-    text-decoration: none;
-    color: #957dad;
-}
 .navbar li:hover, li:active{
     background-color: rgba(0, 0, 0, .3);
 }
@@ -50,6 +46,7 @@ li{
     color: orangered;
 }
 .cuadro h1{
+    font-size: 28px;
     height: 120px;
     width: 300px;
     padding: 10px;
@@ -93,6 +90,7 @@ li{
         margin-left: 20px;
         height: 100px;
         width: 200px;
+        font-size: 18px;
     }
  }
  @media (max-width: 340px ){
@@ -174,19 +172,6 @@ li{
 .card .descripcion{
     padding: 10px;
     text-align: center;
-    color: white;
-}
-.card .descripcion a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px;
-    color: #957dad;
-    border: 1px solid #957dad;
-    border-radius: 4px;
-    transition: all 300ms ease;
-}
-.card .descripcion a:hover{
-    background: #957dad;
     color: white;
 }
 
